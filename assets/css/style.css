@@ -1,0 +1,440 @@
+@font-face {
+  font-family: "QanelasSoftThin"; /* 100 */
+  src: url("../font/QanelasSoftThin.otf");
+  src: url("../font/QanelasSoftThin.otf") format("opentype");
+}
+@font-face {
+  font-family: "QanelasSoftUltraLight"; /* 200 */
+  src: url("../font/QanelasSoftUltraLight.otf");
+  src: url("../font/QanelasSoftUltraLight.otf") format("opentype");
+}
+@font-face {
+  font-family: "QanelasSoftLight"; /* 300 */
+  src: url("../font/QanelasSoftLight.otf");
+  src: url("../font/QanelasSoftLight.otf") format("opentype");
+}
+@font-face {
+  font-family: "QanelasSoftRegular"; /* 400 */
+  src: url("../font/QanelasSoftRegular.otf");
+  src: url("../font/QanelasSoftRegular.otf") format("opentype");
+}
+@font-face {
+  font-family: "QanelasSoftMedium"; /* 500 */
+  src: url("../font/QanelasSoftMedium.otf");
+  src: url("../font/QanelasSoftMedium.otf") format("opentype");
+}
+@font-face {
+  font-family: "QanelasSoftSemiBold"; /* 600 */
+  src: url("../font/QanelasSoftSemiBold.otf");
+  src: url("../font/QanelasSoftSemiBold.otf") format("opentype");
+}
+@font-face {
+  font-family: "QanelasSoftBold"; /* 700 */
+  src: url("../font/QanelasSoftBold.otf");
+  src: url("../font/QanelasSoftBold.otf") format("opentype");
+}
+@font-face {
+  font-family: "QanelasSoftExtraBold"; /* 800 */
+  src: url("../font/QanelasSoftExtraBold.otf");
+  src: url("../font/QanelasSoftExtraBold.otf") format("opentype");
+}
+@font-face {
+  font-family: "QanelasSoftHeavy"; /* 900 */
+  src: url("../font/QanelasSoftHeavy.otf");
+  src: url("../font/QanelasSoftHeavy.otf") format("opentype");
+}
+
+:root {
+  --100: "QanelasSoftThin";
+  --200: "QanelasSoftUltraLight";
+  --300: "QanelasSoftLight";
+  --400: "QanelasSoftRegular";
+  --500: "QanelasSoftMedium";
+  --600: "QanelasSoftSemiBold";
+  --700: "QanelasSoftBold";
+  --800: "QanelasSoftExtraBold";
+  --900: "QanelasSoftHeavy";
+  --theme-color: #e2d2c5;
+  --red-color: #ea394b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--theme-color);
+  font-family: var(--400);
+  font-weight: normal;
+  font-style: normal;
+}
+img {
+  width: 100%;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header {
+  margin-bottom: 30px;
+}
+.btn.btn-th-rounded {
+  padding: 10px 25px;
+  background: #ea394b;
+  border-radius: 80px;
+  color: #fff;
+  min-width: 150px;
+  border: 7px solid #f8f9fae3;
+  margin-top: 15px;
+}
+.btn.btn-th-rounded.d-shadow {
+  /* box-shadow: 0px 14px 34px #1f1049; */
+  /* border: 7px solid #fff6; */
+  margin-top: 15px;
+}
+section {
+  padding: 25px 0;
+}
+
+/* ============ Header Hero Section ============= */
+.header-hero-section {
+  background: url(../images/donation-slicing/Bg.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 10px 0 40px 0;
+}
+a.navbar-brand.logo-theme {
+  width: 163px;
+}
+.th-nav li a {
+  color: #fff;
+}
+.h1-main {
+  font-family: var(--800);
+}
+/* ============ Header Hero Section ============= */
+/* ============ charity Section ============= */
+.center {
+  text-align: center;
+}
+.h2-main {
+  font-family: var(--700);
+}
+.h2-main.center {
+  margin-bottom: 55px;
+}
+.th-icon {
+  width: 115px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+.card-th {
+  text-align: center;
+  background: #eee2d6;
+  border-radius: 30px;
+  padding: 20px 32px;
+  border: 4px solid #fff;
+  margin-bottom: 30px;
+}
+.card-th h4 {
+  font-family: var(--700);
+}
+/* ============ charity Section ============= */
+
+/* ============ going forward Section ============= */
+.dash {
+  border: 1px solid #2a2b2d;
+  width: 56px;
+  height: 0;
+  margin-right: 10px;
+}
+.text-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.img-wrapper {
+  margin-bottom: 20px;
+}
+/* ============ going forward Section ============= */
+
+/* ============ hope Section ============= */
+.hope-section .row {
+  flex-direction: column-reverse;
+}
+/* ============ hope Section ============= */
+
+/* ============ breakdown Section ============= */
+.breakdown-section h2 {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.breakdown-section p {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.counter-wrapper {
+  margin-bottom: 20px;
+  color: #555254;
+}
+.counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.counter-wrapper .text-lg {
+  font-family: var(--600);
+  margin-bottom: 0;
+}
+/* ============ breakdown Section ============= */
+
+/* ============ footer Section ============= */
+footer > .container {
+  border-top: 1px solid #2a2b2d;
+  padding: 20px 0 10px 0;
+}
+.sc-list img {
+  object-fit: contain;
+  height: 100%;
+}
+.sc-list a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin-right: 20px;
+}
+.sc-list ul {
+  display: flex;
+  justify-content: center;
+}
+.img-footer {
+  width: 39px;
+  height: 39px;
+  margin: 20px auto;
+}
+.text-footer {
+  text-align: center;
+  color: #2a2b2e;
+}
+/* ============ footer Section ============= */
+
+/* ============ Media Queries ============= */
+
+/* ============ Small Device ============= */
+@media screen and (min-width: 992px) {
+  section {
+    padding: 40px 0;
+  }
+  /* ============ Header Hero Section ============= */
+  ul.navbar-nav.ms-auto.th-nav {
+    align-items: center;
+  }
+  .th-nav li.nav-item {
+    margin-right: 15px;
+  }
+  .th-nav li.nav-item:last-child {
+    margin-right: 0;
+  }
+  .header-hero-section .row {
+    align-items: center;
+  }
+  .img-hero {
+    padding: 0px 0px 40px 40px;
+  }
+  /* ============ Header Hero Section ============= */
+  /* ============ hope Section ============= */
+  .hope-section .row {
+    flex-direction: row;
+  }
+  .img-wrapper {
+    padding: 40px;
+  }
+  section.going-forward-section .row {
+    align-items: center;
+  }
+  section.hope-section .row {
+    align-items: center;
+  }
+  section.world-section .row {
+    align-items: center;
+  }
+  section.world-section .img-wrapper {
+    padding-left: 0;
+  }
+  section.hope-section .img-wrapper {
+    padding-right: 0;
+  }
+  section.going-forward-section .img-wrapper {
+    padding-left: 0;
+  }
+  /* ============ hope Section ============= */
+  /* ============ breakdown Section ============= */
+  .counter {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 65%;
+    margin: 0 auto;
+  }
+  .breakdown-section h2 {
+    width: 80%;
+  }
+  .breakdown-section p {
+    width: 80%;
+  }
+  /* ============ breakdown Section ============= */
+  /* ============ footer Section ============= */
+  .img-footer {
+    margin: 0 0 0 auto;
+  }
+  .sc-list ul {
+    justify-content: flex-start;
+  }
+  .sc-list a {
+    width: 17px;
+    height: 17px;
+  }
+  /* ============ footer Section ============= */
+}
+/* ============ Small Device ============= */
+
+/* ============ Large Device ============= */
+@media screen and (min-width: 1024px) {
+  .btn.btn-th-rounded {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  /* ============ Header Hero Section ============= */
+  .h1-main {
+    font-size: 56px;
+    line-height: 58px;
+    /* or 103% */
+    text-transform: capitalize;
+    color: #dfd2c9;
+  }
+  .header-hero-section p {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  /* ============ Header Hero Section ============= */
+  /* ============ charity Section ============= */
+  .h2-main {
+    font-size: 38px;
+    line-height: 46px;
+  }
+  .card-th h4 {
+    font-size: 20px;
+    line-height: 35px;
+  }
+  .card-th p {
+    font-size: 17px;
+    line-height: 29px;
+  }
+  /* ============ charity Section ============= */
+  /* ============ going forward Section ============= */
+  p.text-1 {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .text-wrapper .text {
+    font-family: var(--500);
+    font-size: 21px;
+    line-height: 25px;
+  }
+  /* ============ going forward Section ============= */
+  /* ============ hope Section ============= */
+  /* ============ hope Section ============= */
+  /* ============ breakdown Section ============= */
+  .counter-wrapper .text-lg {
+    font-family: var(--600);
+    margin-bottom: 0;
+    font-size: 45px;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+  /* ============ breakdown Section ============= */
+  /* ============ footer Section ============= */
+  .text-footer {
+    text-align: center;
+    color: #2a2b2e;
+    font-size: 19px;
+    line-height: 24px;
+  }
+  /* ============ footer Section ============= */
+}
+/* ============ Large Device ============= */
+
+/* ============ Large Device ============= */
+@media screen and (min-width: 1600px) {
+  .btn.btn-th-rounded {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  /* ============ Header Hero Section ============= */
+  .h1-main {
+    font-size: 76px;
+    line-height: 78px;
+    /* or 103% */
+    text-transform: capitalize;
+    color: #dfd2c9;
+  }
+  .header-hero-section p {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  /* ============ Header Hero Section ============= */
+  /* ============ charity Section ============= */
+  .h2-main {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .card-th h4 {
+    font-size: 25px;
+    line-height: 31px;
+  }
+  .card-th p {
+    font-size: 17px;
+    line-height: 29px;
+  }
+  /* ============ charity Section ============= */
+  /* ============ going forward Section ============= */
+  p.text-1 {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .text-wrapper .text {
+    font-family: var(--500);
+    font-size: 21px;
+    line-height: 25px;
+  }
+  /* ============ going forward Section ============= */
+  /* ============ hope Section ============= */
+  /* ============ hope Section ============= */
+  /* ============ breakdown Section ============= */
+  .counter-wrapper .text-lg {
+    font-family: var(--600);
+    margin-bottom: 0;
+    font-size: 55px;
+    line-height: 39px;
+    margin-bottom: 20px;
+  }
+  /* ============ breakdown Section ============= */
+  /* ============ footer Section ============= */
+  .text-footer {
+    text-align: center;
+    color: #2a2b2e;
+    font-size: 19px;
+    line-height: 24px;
+  }
+  /* ============ footer Section ============= */
+}
+/* ============ Large Device ============= */
+
+/* ============ Media Queries ============= */
